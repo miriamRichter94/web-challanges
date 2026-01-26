@@ -5,11 +5,14 @@
 /* Task 1: First, we want to adjust how the size of our elements is calculated in CSS. Do you know how to switch from "content-box" to "border-box"? */
 
 /* Your solution */
+* {
+  box-sizing: border-box;
+}
 
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements in your code via inheritance. Which selector do we need for this? */
 
 /* Add selector */
- {
+body {
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
@@ -22,6 +25,11 @@
 
 /* Your solution */
 
+h1,
+h2 {
+  line-height: 1.2;
+}
+
 /* Task 4: Now we want to give our h1 element more styles to shine! Add the following styles by writing the correct declarations inside the next CSS rule:
 
 - Change the background color to white
@@ -32,6 +40,10 @@
 
 .title {
   /* Your solution */
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ------- Sections ------- */
@@ -46,6 +58,14 @@
 
 section {
   /* Your solution */
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 5px solid orange;
+}
+
+.favourites {
+  border-left-color: gold;
 }
 
 /* ------- Headings Part 2 ------- */
@@ -60,6 +80,16 @@ section {
 
 .subtitle {
   /* Your solution */
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+
+.favourites .subtitle {
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
 }
 
 /* ------- List ------- */
@@ -67,14 +97,14 @@ section {
 /* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
 
 /* Add selector */
- {
+ul {
   list-style: "🧡";
-  padding-left: /* Add value */ ;
+  padding-left: 5px /* Add value */;
 }
 
 /* Add selector */
- {
-  padding-left: /* Add value */ ;
+li {
+  padding-left: 10px /* Add value */;
 }
 
 /* ------- The End -------- */
