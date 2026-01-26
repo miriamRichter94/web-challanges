@@ -22,6 +22,7 @@
 
 .animal {
   padding: 16px;
+  font-size: 32px;
 
   /*
     The animals are very small.
@@ -37,6 +38,17 @@
 
   💡 Select the animals by their class names and use the text-align property.
 */
+.crocodile {
+  text-align: left;
+}
+
+.giraffe {
+  text-align: center;
+}
+
+.dino {
+  text-align: right;
+}
 
 /* 
   The animals want some color! 🎨
@@ -47,3 +59,14 @@
 
   💡 You'll need to use a pseudo-class selector for each animal.
 */
+.crocodile:hover {
+  background-color: lightblue;
+}
+
+.giraffe:hover {
+  background-color: lightgreen;
+}
+
+.dino:hover {
+  background-color: lightsalmon;
+}
