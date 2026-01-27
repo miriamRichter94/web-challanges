@@ -20,6 +20,10 @@ body {
  */
 .header {
   background: #370182;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
   color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px 30px;
@@ -40,6 +44,9 @@ body {
  * document is scrolled.
  */
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 48px;
   color: #ffffff;
   background: #370182;
@@ -51,6 +58,7 @@ body {
  */
 .card {
   max-width: 90%;
+  position: relative;
   margin: 30px auto;
   padding: 20px;
   color: #555;
@@ -68,6 +76,9 @@ body {
  * Place the bookmark in the top-right corner of each card.
  */
 .card__bookmark {
+  position: absolute;
+  top: -25px;
+  right: -25px;
   border: 1px solid #2e016d;
   background-color: #3f0097;
   font-size: 2em;
@@ -82,6 +93,8 @@ body {
  */
 .goto-top {
   text-decoration: none;
+  position: fixed;
+  bottom: 50px;
   color: #f9f9f9;
   padding: 12px 24px;
   border-radius: 5px;
