@@ -1,13 +1,13 @@
 :root {
-  --body-bg: #fddcd2;
+  --body-bg: bisque;
 
-  --header-bg: #ff4a11;
-  --header-text: #3f0097;
+  --header-bg: black;
+  --header-text: pink;
 
-  --main-bg: ##fddcd2;
-  --main-text: #ff4a11;
-  --main-title-bg: #3f0097;
+  --main-bg: bisque;
+  --main-text: black;
+  --main-title-bg: #fab1d9;
 
-  --card-bg: #8336ff7b;
+  --card-bg: #c9f091;
   --card-text: #201e1d;
 }
