@@ -73,6 +73,18 @@ h1 {
   height: 100px;
 }
 
+@media screen and (min-width: 599px) {
+  .box--two {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .box--two {
+    width: 400px;
+  }
+}
+
 .box--three {
   background-color: lightpink;
 
