@@ -11,6 +11,17 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const title = "Title for the Post";
+
+const post =
+  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam";
+
+const likes = 320;
+
+const author = "Lynett";
+
+const isReported = false;
+
 // --^-- write your code here --^--
 
 /*
@@ -19,4 +30,11 @@ console.clear();
 
 // --v-- write your code here --v--
 
+console.log("Title: " + title);
+console.log("Content: " + post);
+console.log("Likes: " + likes);
+console.log("Reported: " + isReported);
+
 // --^-- write your code here --^--
+
+console.log("Updated Likes: " + (likes + 1));
