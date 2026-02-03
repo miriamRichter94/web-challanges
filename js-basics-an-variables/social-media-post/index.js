@@ -16,7 +16,7 @@ const title = "Title for the Post";
 const post =
   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam";
 
-const likes = 320;
+let likes = 320;
 
 const author = "Lynett";
 
@@ -36,5 +36,6 @@ console.log("Likes: " + likes);
 console.log("Reported: " + isReported);
 
 // --^-- write your code here --^--
+likes++;
 
-console.log("Updated Likes: " + (likes + 1));
+console.log("Updated Likes: " + likes);
