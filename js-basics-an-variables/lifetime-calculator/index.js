@@ -24,7 +24,7 @@ const lifeSpanInYears = 80;
 const sleepingTimeInHrs = 8;
 let livedDays = currentAge * daysPerYear;
 let remainingDays = lifeSpanInYears * daysPerYear - livedDays;
-
+let alreadLived = currentAge * (100 / lifeSpanInYears);
 let sleepingTimeInHrsTotal = sleepingTimeInHrs * livedDays;
 let sleepingTimeInDays = sleepingTimeInHrsTotal / 24;
 
@@ -35,7 +35,9 @@ console.log(
     livedDays +
     " Days. Your remaining Days in your life are " +
     remainingDays +
-    " Days. Your total sleeping time was " +
+    " Days. That means you already lived " +
+    alreadLived +
+    "% of your life. Your total sleeping time was " +
     sleepingTimeInHrsTotal +
     " hours. That are " +
     sleepingTimeInDays +
