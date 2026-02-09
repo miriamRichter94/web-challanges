@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -9,5 +9,43 @@
     <title>Personal Profile Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">Create your Personal Profile</h1>
+
+    <form aria-labelledby="title">
+      <p id="personal-description">
+        We want to get to knw you! Please enter your personal information!
+      </p>
+      <fieldset aria-describedby="personal-description">
+        <legend>Personal Information</legend>
+        <label for="first-name-input">First Name:</label>
+        <input id="first-name-input" type="text" />
+
+        <label for="last-name-input">Last Name:</label>
+        <input id="last-name-input" type="text" />
+
+        <label for="birthday-input">Your Birthday:</label>
+        <input id="birthday-input" type="date" />
+      </fieldset>
+
+      <p id="further-description">
+        Can you tell us a little bit more? We want to annoy you with unwanted
+        ads.
+      </p>
+      <fieldset aria-describedby="further-description">
+        <legend>Further Information</legend>
+
+        <label for="color-input">Favorite Color:</label>
+        <input id="first-name-input" type="color" value="#E5430F" />
+
+        <label for="pet-select">What's your favorite pet?</label>
+        <select id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
