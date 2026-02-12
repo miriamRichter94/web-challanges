@@ -1,3 +1,5 @@
+//const { createElement } = require("react");
+
 console.clear();
 const pixelValues = [
   [
@@ -123,3 +125,12 @@ const pixelValues = [
 ];
 
 const canvas = document.querySelector('[data-js="canvas"]');
+
+for (const pixelValue of pixelValues) {
+  for (const pixel of pixelValue) {
+    const div = document.createElement("div");
+    div.classList.add("pixel");
+    div.style.backgroundColor = pixel;
+    canvas.append(div);
+  }
+}
