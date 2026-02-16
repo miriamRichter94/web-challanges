@@ -18,3 +18,10 @@ const colors = [
   "#606E8C",
   "#A5A5A5",
 ];
+
+colors.forEach((color) => {
+  const colorDiv = document.createElement("div");
+  colorDiv.classList.add("color-box");
+  colorDiv.style.backgroundColor = color;
+  document.body.append(colorDiv);
+});
