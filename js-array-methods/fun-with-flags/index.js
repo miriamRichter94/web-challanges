@@ -9,12 +9,14 @@ queryInput.addEventListener("input", (event) => {
 
   const searchString = event.target.value;
 
-  const foundCountry = countries.find(
-    (country) => country.name == searchString,
+  const foundCountries = countries.filter((country) =>
+    country.name.includes(searchString),
   );
 
-  if (foundCountry) {
-    const countryElement = Country(foundCountry);
-    container.append(countryElement);
+  if (foundCountries) {
+    foundCountries.forEach((foundCountry) => {
+      const countryElement = Country(foundCountry);
+      container.append(countryElement);
+    });
   }
 });
