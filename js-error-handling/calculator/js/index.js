@@ -2,22 +2,17 @@ console.clear();
 
 const form = document.querySelector("form");
 const output = form.querySelector("output");
+const errorField = document.querySelector('[data-js="error"]');
 
 const operations = {
   add: (a, b) => a + b,
   subtract: (a, b) => a - b,
   multiply: (a, b) => a * b,
   divide: (a, b) => {
-    /* if (b === 0) {
+    if (b === 0) {
       throw new Error("Cannot divide by zero!");
     }
-    return a / b; */
-    try {
-      result = a / b;
-      return result;
-    } catch {
-      alert("Please pass a number rather than 0 as divisor, thank you!");
-    }
+    return a / b;
   },
 };
 
@@ -26,5 +21,10 @@ form.addEventListener("submit", (event) => {
   const firstNumber = Number(event.target.firstNumber.value);
   const secondNumber = Number(event.target.secondNumber.value);
   const operation = event.target.operation.value;
-  output.innerText = operations[operation](firstNumber, secondNumber);
+  try {
+    output.innerText = operations[operation](firstNumber, secondNumber);
+  } catch (error) {
+    errorField.innerText =
+      "Please pass a number rather than 0 as divisor, thank you!";
+  }
 });
