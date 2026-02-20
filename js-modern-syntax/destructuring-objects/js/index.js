@@ -14,7 +14,7 @@ const company = {
 
 // Example: export const { value1 } = myObject;
 
-/* export const { name, course, location } = company; */
+export const { course } = company;
 
 /*
 EXERCISE 2
