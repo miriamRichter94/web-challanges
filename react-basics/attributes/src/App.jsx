@@ -6,7 +6,7 @@ export default function App() {
 
 function AttributArticle() {
   return (
-    <article>
+    <article className="article">
       <h2 className="article__title">Dobrou noc</h2>
       <lable htmlFor="testInput"> Ein Input Lable</lable>
       <input id="testInput" />
