@@ -1,4 +1,4 @@
-# React State 1: Journal App with Favorite Button State
+# [DONE] React State 1: Journal App with Favorite Button State
 
 In this challenge, you will begin building a journal app, which will be expanded in future sessions. In this part, you’ll implement a favorite button to mark entries as favorites.
 
@@ -30,7 +30,7 @@ You can use the following command:
 
 ---
 
-# React State 3.1: Journal App with Form Submit
+# [DONE] React State 3.1: Journal App with Form Submit
 
 In this challenge we want to store the entries information in a state to be able to add new entries.
 
@@ -44,7 +44,7 @@ In this challenge we want to store the entries information in a state to be able
 
 Nice, the entries are stored in state now! 🚀
 
-### Life the state up
+### Lift the state up
 
 The component rendering the entries and the component with the form needs to share this state of entries. We need to lift the state up to the first common ancestor of these two components. In the template it is the `App` component.
 
