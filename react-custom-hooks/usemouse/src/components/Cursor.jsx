@@ -1,7 +1,8 @@
+import useMouse from "../hooks/useMouse.js";
 import "./Cursor.css";
 
 export default function Cursor() {
-  const [x, y] = [200, 100];
+  const [x, y] = useMouse();
   return (
     <div className="cursor">
       <div className="cursor__horizontal" style={{ top: `${y}px` }}></div>
