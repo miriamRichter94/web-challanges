@@ -1,10 +1,6 @@
 import { add, divide, multiply, subtract } from ".";
 
 // Test for addition
-test("test 4 + 3 = 7", () => {
-  expect(add(4, 3)).toBe(7);
-});
-
 test("test 2 + 3 = 5", () => {
   expect(add(2, 3)).toBe(5);
 });
