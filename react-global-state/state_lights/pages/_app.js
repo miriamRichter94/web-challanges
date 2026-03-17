@@ -15,8 +15,11 @@ const initialRooms = [
 
 export default function App({ Component, pageProps }) {
   const [rooms, setRooms] = useState(initialRooms);
-  console.log(rooms);
+
   const activeLights = rooms.filter((room) => room.isOn == true).length;
+
+  const isDimmed =
+    rooms.filter((room) => room.isOn == false).length === rooms.length;
 
   function handleToggle(id) {
     setRooms(
@@ -43,7 +46,7 @@ export default function App({ Component, pageProps }) {
   }
 
   return (
-    <Layout>
+    <Layout isDimmed={isDimmed}>
       <GlobalStyle />
       <Component
         {...pageProps}
