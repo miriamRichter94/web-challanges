@@ -31,7 +31,7 @@ export default function CarRace() {
           ...car,
           position: {
             x: car.position.x + coveredDistance,
-            lastDistance: car.position.lastDistance + coveredDistance,
+            lastDistance: coveredDistance,
           },
         };
       });
@@ -44,7 +44,7 @@ export default function CarRace() {
 
       const position = {
         x: car.position.x + coveredDistance,
-        lastDistance: car.position.lastDistance + coveredDistance,
+        lastDistance: coveredDistance,
       };
 
       car.position = position;
