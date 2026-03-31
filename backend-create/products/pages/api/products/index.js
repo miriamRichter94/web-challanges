@@ -11,5 +11,13 @@ export default async function handler(request, response) {
     return;
   }
 
+  if (request.method === "POST") {
+    const fishData = request.body;
+    await Product.create(fishData);
+
+    response.status(201).json({ status: "Fish added" });
+    return;
+  }
+
   response.status(405).json({ status: "Method not allowed." });
 }
